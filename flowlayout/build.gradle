@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 
+def VERSION_CODE = "1.0.0"
 android {
     compileSdkVersion 29
     buildToolsVersion "30.0.1"
@@ -8,8 +9,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
-
+        versionName VERSION_CODE
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -31,13 +31,14 @@ dependencies {
 
 }
 
+
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 def siteUrl = 'https://github.com/zhang721688/FlowLayout'//TODO:修改仓库FlowLayout
 def gitUrl = 'https://github.com/zhang721688/FlowLayout.git'//TODO:修改仓库FlowLayout
 def libName = "flowlayout"//TODO:修改依赖flowlayout
 group = "com.zxn.flowlayout"//TODO:修改包名com.zxn.flowlayout
-version = "1.0.0"
+version = VERSION_CODE
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
