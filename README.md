@@ -22,6 +22,7 @@ Android流式布局，支持单选、多选等，适合用于产品标签等。
 
 ```
 dependencies {
+    implementation 'com.github.AsaLynn:FlowLayout:1.0.0'//todo:有待发版.
 }
 ```
 

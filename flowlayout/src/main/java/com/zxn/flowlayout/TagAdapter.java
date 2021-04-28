@@ -14,7 +14,7 @@ public abstract class TagAdapter<T> {
     private List<T> mTagDatas;
     private OnDataChangedListener mOnDataChangedListener;
     @Deprecated
-    private HashSet<Integer> mCheckedPosList = new HashSet<Integer>();
+    private HashSet<Integer> mCheckedPosList = new HashSet<>();
 
     public TagAdapter(List<T> datas) {
         mTagDatas = datas;
@@ -55,7 +55,6 @@ public abstract class TagAdapter<T> {
     HashSet<Integer> getPreCheckedList() {
         return mCheckedPosList;
     }
-
 
     public int getCount() {
         return mTagDatas == null ? 0 : mTagDatas.size();
